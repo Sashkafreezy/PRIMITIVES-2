@@ -10,16 +10,18 @@ public class Main {
         // сценариев рассчитываете сумму бонуса и выводите
         // на экран.
 
-       int amount = 50; //начальный счет
-       int bonus; //сумма бонуса (за каждые полные 100 руб)
-       int addedSum = 1350; // сумма пополнения
-          if (addedSum > 1000) {
-              bonus = 1 * addedSum / 100;}
-          else {bonus = 0;}
-       int totalSum = amount + addedSum + bonus; // итоговая сумма на счете
+        int amount = 50; //начальный счет
+        int bonus; //сумма бонуса (за каждые полные 100 руб)
+        int addedSum = 100; // сумма пополнения
+        if (addedSum > 1000) {
+            bonus = 1 * addedSum / 100;
+        } else {
+            bonus = 0;
+        }
+        int totalSum = amount + addedSum + bonus; // итоговая сумма на счете
         System.out.println("Итоговая сумма на счете: " + totalSum);
 
-        }
-
     }
+
+}
 
